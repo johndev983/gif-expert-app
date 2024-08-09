@@ -15,6 +15,7 @@ export const GifItem = ({ height, title, url, width }: Props) => {
         src={ url }
         alt={ title }
         width={ width }
+        unoptimized
       />
 
       <p>{ title }</p>
