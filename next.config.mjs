@@ -23,7 +23,8 @@ const nextConfig = {
         hostname: 'media4.giphy.com'
       }
     ]
-  }
+  },
+  output: 'standalone'
 };
 
 export default nextConfig;
