@@ -1,4 +1,5 @@
-import { useFetchGifs } from '../hooks/useFetchGifs';
+
+import { useFetchGifs } from '@/app/hooks/useFetchGifs'
 import { GifItem } from './';
 
 interface Props {
