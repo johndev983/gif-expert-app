@@ -1,23 +1,69 @@
-Este es un proyecto [Next.js](https://nextjs.org/) iniciado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Empezando
+# Gif Expert App
 
-Primero, ejecute el servidor de desarrollo:
+Este proyecto presenta una aplicación web desarrollada con [Next](https://nextjs.org/) que permite a los usuarios buscar y visualizar GIFs de manera intuitiva. La aplicación busca proporcionar una interfaz de usuario amigable que permita a los usuarios realizar búsquedas de GIFs de manera rápida y precisa.
+## Tecnologías utilizadas
+
+ - [React](https://es.react.dev/)
+ - [Next](https://nextjs.org/)
+ - [TypeScript](https://www.typescriptlang.org/)
+
+
+## Consideraciones técnicas
+
+Se optó por utilizar Next debido a su declarativa y eficiente forma de crear interfaces de usuario, así como por su gran comunidad y ecosistema de herramientas. El hook ``useState`` fue la elección natural para gestionar el estado local de la información obtenida a travez de la peticiión al API de [GIPHY](https://giphy.com/), ya que es sencillo de usar y se integra perfectamente con el paradigma de React.
+
+**Para el futuro, se podrían explorar las siguientes mejoras:**
+
+- **Personalización:** Permitir que el usuario pueda seleccionar un tema.
+
+- **Renderización de GIFs:**  Implementar la renderización de GIFs de manera eficiente para evitar tiempos de carga largos. 
+
+
+## Ejecutar localmente
+
+Clonar el proyecto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/johndev983/gif-expert-app.git
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) con su navegador para ver el resultado.
+Ir al directorio del proyecto
 
-## Deploy en Vercel
+```bash
+  cd gif-expert-app
+```
 
-La forma más sencilla de implementar su aplicación Next.js es usar el [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) de las creadoras de Next.js.
+Instalar dependencias
 
-Echa un vistazo a nuestro [Next.js deployment documentation](https://nextjs.org/docs/deployment) para más detalles.
+```bash
+  npm install
+```
+
+Iniciar el servidor
+
+```bash
+  npm run start
+```
+
+Iniciar el servidor con [Docker](https://docs.docker.com/)
+
+```bash
+  docker build -t next-gif-expert-app .
+```
+
+
+## Demo
+
+[https://gif-expert-app.vercel.app/](https://gif-expert-app-liart.vercel.app/)
+
+
+## Authors
+
+- [@johndev983](https://github.com/johndev983)
+
+
+## Support
+
+Para obtener ayuda, envíe un correo electrónico a johndev983@gmail.com.
+
